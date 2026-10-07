@@ -1,0 +1,30 @@
+{
+  "author": "Pablo & Claude",
+  "build": "124683",
+  "category": [
+    "titans",
+    "ui"
+  ],
+  "context": "client",
+  "date": "2026-10-07",
+  "description": "Starts the PA Chat community chat windows minimized. CHAT tab in Settings: startup state (minimized, open or remember last), open window size, opacity, hide the chat. Requires PA Chat. Translations are automatic and may contain errors.",
+  "display_name": "Chat Minimized",
+  "forum": "https://github.com/pablohenriquez93k-glitch/chat-minimized/discussions/1",
+  "identifier": "com.pa.pabloandclaude.chatminimized",
+  "signature": " ",
+  "version": "1.0.0",
+  "priority": 101,
+  "scenes": {
+    "uberbar": [
+      "coui://ui/mods/com.pa.pabloandclaude.chatminimized/comun.js",
+      "coui://ui/mods/com.pa.pabloandclaude.chatminimized/uberbar.js"
+    ],
+    "settings": [
+      "coui://ui/mods/com.pa.pabloandclaude.chatminimized/comun.js",
+      "coui://ui/mods/com.pa.pabloandclaude.chatminimized/settings.js"
+    ]
+  },
+  "dependencies": [
+    "pachat"
+  ]
+}
