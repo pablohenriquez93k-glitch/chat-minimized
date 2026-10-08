@@ -6,13 +6,13 @@
     "ui"
   ],
   "context": "client",
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "description": "Starts the PA Chat community chat windows minimized. CHAT tab in Settings: startup state (minimized, open or remember last), open window size, opacity, hide the chat. Requires PA Chat. Translations are automatic and may contain errors.",
   "display_name": "Chat Minimized",
   "forum": "https://github.com/pablohenriquez93k-glitch/chat-minimized/discussions/1",
   "identifier": "com.pa.pabloandclaude.chatminimized",
   "signature": " ",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "priority": 101,
   "scenes": {
     "uberbar": [

@@ -24,6 +24,14 @@
     // Drop the removed "mute Global" value from early 0.2.0 test builds; saved on the next SAVE.
     try { if (api.settings.data[G]) delete api.settings.data[G].global; } catch (e) {}
 
+    // Tell the uberbar (PA Chat) to re-read settings right after SAVE; no polling there.
+    var save0 = api.settings.save;
+    api.settings.save = function () {
+        var r = save0.apply(this, arguments);
+        try { api.Panel.message('uberbar', 'chatmin_reload'); } catch (e) {}
+        return r;
+    };
+
     function opt(k) {
         return '<div class="option" data-bind="template: { name: \'setting-template\', data: $root.settingsItemMap()[\'' + G + '.' + k + '\'] }"></div>';
     }
